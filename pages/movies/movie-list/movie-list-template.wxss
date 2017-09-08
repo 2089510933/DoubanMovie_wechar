@@ -1,0 +1,49 @@
+@import "../movie/movie-template.wxss";
+
+.movie-list-container {
+  /*背景颜色：灰白  */
+  background-color: #fff;
+  display: flex;
+  /*垂直排列  */
+  flex-direction: column;
+}
+
+.inner-container {
+  /*设置底部边距  */
+  margin: 0 auto 20rpx;
+}
+
+.movie-head {
+  /*设置元素内部填充间距  */
+  padding: 30rpx 20rpx 22rpx;
+  /*display:flex;
+  flex-direction: row;
+  justify-content:space-between;*/
+}
+
+.slogan {
+  font-size: 24rpx;
+}
+
+.more {
+  /*让图像向右侧浮动  */
+  float: right;
+}
+
+.more-text {
+  vertical-align: middle;
+  margin-right: 10rpx;
+  color: #1f4ba5;
+}
+
+.more-img {
+  width: 9rpx;
+  height: 16rpx;
+  vertical-align: middle;
+}
+
+.movies-container {
+  /*弹性盒子模式，水平排列  */
+  display: flex;
+  flex-direction: row;
+}

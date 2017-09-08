@@ -1,0 +1,27 @@
+.stars-container {
+  /*将容器定义为弹性盒布局模型  */
+  display: flex;
+  /*排列方向为：灵活的项目将水平显示，正如一个行一样  */
+  flex-direction: row;
+}
+
+.stars {
+  display: flex;
+  flex-direction: row;
+  height: 17rpx;
+  /*元素右边距  */
+  margin-right: 24rpx;
+  /*元素顶部边距  */
+  margin-top: 6rpx;
+}
+
+.stars image {
+  /*左边填充像素  */
+  padding-left: 3rpx;
+  height: 17rpx;
+  width: 17rpx;
+}
+
+.star-score{
+   color: #1f3463;
+}

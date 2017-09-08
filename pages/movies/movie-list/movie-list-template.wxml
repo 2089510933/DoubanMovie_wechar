@@ -1,0 +1,24 @@
+<import src="../movie/movie-template.wxml" />
+<!--电影列表模块  -->
+<template name="movieListTemplate">
+  <!--容器垂直方向排列  -->
+  <view class="movie-list-container">
+    <view class="inner-container">
+      <view class="movie-head">
+        <!--当前的电影类型主题名称  -->
+        <text class="slogan">{{categoryTitle}}</text>
+        <!--更多，有点击事件  -->
+        <view catchtap="onMoreTap" class="more" data-category="{{categoryTitle}}">
+          <text class="more-text">更多</text>
+          <image class="more-img" src="/images/icon/arrow-right.png"></image>
+        </view>
+      </view>
+      <view class="movies-container">
+        <!--输出电影列表块  -->
+        <block wx:for="{{movies}}" wx:for-item="movie" wx:key="key">
+          <template is="movieTemplate" data="{{...movie}}" />
+        </block>
+      </view>
+    </view>
+  </view>
+</template>
